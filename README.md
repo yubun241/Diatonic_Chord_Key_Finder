@@ -19,20 +19,15 @@
 
 ## 使い方
 
-1. `diatonic_finder.py` をダウンロードまたはクローンします。
+1. `diatonic_finder.py` を実行します。
    
-3. 以下のようにコードをリスト形式で渡して実行します。
+   ```bash
+   
+   python diatonic_finder.py
 
-```python
+   
+2.  調べたいコードを入力
+入力 > C Dm Em
+可能性のあるキー: C Major, G Major, A Minor, E Minor
 
-from diatonic_finder import DiatonicKeyFinder
-
-finder = DiatonicKeyFinder()
-
-# 調べたいコードを入力
-
-keys = finder.find_keys(["C", "Dm", "G"])
-
-print(keys)
-
-# 出力例: ['C Major', 'A Minor']
+出力例: ['C Major', 'A Minor']
